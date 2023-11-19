@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    min-height: 100vh; /* Đảm bảo chiều cao của body ít nhất bằng chiều cao của viewport */
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.container {
+    text-align:center;
+}
+
+.header {
+    background: linear-gradient(180deg,
+            rgba(217, 217, 217, 0.60) 0%,
+            rgba(217, 217, 217, 0.00) 39.58%,
+            rgba(217, 217, 217, 0.51) 100%);
+    padding: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+	height: 125px;
+}
+
+.header h1 {
+    color: black;
+    text-align: left;
+    font-size: 34px;
+    position: relative;
+    bottom: -15px;
+    left: 10px;
+}
+
+.header h2 {
+    color: #800009;
+    text-align: left;
+    font-size: 20px;
+    position: relative;
+    bottom: -15px;
+    left: 10px;
+}
+
+#Navigation-board {
+    float: right;
+    margin-right: 20px;
+}
+
+#Navigation-board ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	margin-top: -19px;
+}
+
+#Navigation-board li {
+    display: inline-block;
+	margin-right: 5px;
+}
+
+#Navigation-board li:last-child {
+	margin-right: 5px;
+}
+
+#Navigation-board li a {
+    display: block;
+    color: #000000;
+    text-align: center; 
+	margin-top: 7px;
+	margin-left: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+	font-weight: 550;
+	font-size: 20px;
+}
+
+#Navigation-board li a:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+#SCP-Logo {
+    float: left;
+    width: 100px;
+    height: 95px;
+    margin-left: -15px;
+    margin-top: -15px;
+}
+
+.header #Search-Logo {
+    float: right;
+    width: 40px;
+    height: 45px;
+    margin-right: -95px;
+    margin-top: -10px;
+}
+
+.header #User-Logo {
+    float: right;
+    width: 40px;
+    height: 45px;
+    margin-right: 40px;
+    margin-top: -10px;
+}
+
+
+/* Content */
+.content hr {
+    margin-left: 220px;
+    margin-right: 220px;
+}
+
+.image-featured {
+    text-align: center;
+}
+
+.image-featured table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.image-featured td {
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.image-featured img {
+    max-width: 95%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.image-featured img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.Title {
+    color: #800009;
+}
+
+.Title h2 {
+    padding: 10px;
+}
+
+.warning-script h1{
+    color:#800009;
+    font-size: 80px;
+    margin: 0px;
+}
+
+.warning-script h3{
+    color:#800009;
+    font-size: 22px;
+    padding-top: 15px;
+}
+
+.warning-script p{
+    font-size: 20px;
+    margin: 0px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#description {
+    margin-bottom: 0;
+}
+
+#Licensing {
+    color: #8B8B8B;
+    text-align: left;
+    padding: 10px;
+    margin-left: 230px;
+}
+
+#des {
+    color: #800009;
+    float: left;
+    display: inline-block;
+    margin-left: 230px;
+}
+
+#edited-time {
+    float: right;
+    font-weight: 550;
+    display: inline-block;
+    margin-right: 230px;
+}
+
+/* // Content */
+
+nav {
+    width: 30%;
+    background: #ccc;
+    padding: 20px;
+}
+
+article {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.footer {
+    background: linear-gradient(180deg, #D9D9D9 30.73%, #DCDCDC 56.68%);
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+	text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; /* Thêm dòng này */
+}
+
+.footer-header {
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.header-footer {
+    text-align: left;
+}
+
+.footer th {
+    font-size: 30px;
+}
+
+.footer ul li {
+    list-style-type: none;
+    font-size: 22px;
+    line-height: 2;
+}
+
+.footer table {
+    padding-top: 30px;
+    padding-left: 100px;
+    position: absolute;
+}
+
+#contact-us {
+    padding-left: 20px;
+    position: relative;
+}
+
+#other {
+    padding-left: 40px;
+    /* position: absolute; */
+}
+
+.copyright-section {
+    width: 100%;
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+}
+
+.copyright-section p {
+    font-size: 15px;
+    font-weight: 550;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.footer a {
+    color: #800009;
+    text-decoration: none;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+}
+
+footer img {
+    padding-top: 20px;
+    position: relative;
+}
+
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
+
+    nav,
+    article {
+        width: 100%;
+    }
+}

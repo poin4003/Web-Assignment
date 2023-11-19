@@ -1,0 +1,408 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    min-height: 100vh; /* Đảm bảo chiều cao của body ít nhất bằng chiều cao của viewport */
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+/* content */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #aa030e;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+    font-size: 13px;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container select,
+.container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+div.frame {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    gap: 10px
+}
+
+.container input[type="checkbox"],
+.container input[type="radio"] {
+    margin-right: 5px;
+}
+
+.label-style {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 580px;
+    margin-bottom: -12px;
+    position: relative;
+    z-index: 1;
+    padding-left: 5px;
+    background-color: #ffffff;
+}
+
+#sex-label {
+    margin-bottom: -7px;
+    margin-right: 536px;
+}
+
+#hobby-label{
+    margin-bottom: -7px;
+    margin-right: 542px;
+}
+
+#student-id-label {
+    margin-bottom: -13px;
+    margin-right: 520px;
+}
+
+#name-label {
+    margin-bottom: -12px;
+    margin-right: 522px;
+}
+
+#email-label {
+    margin-bottom: -12px;
+    margin-right: 548px;
+}
+
+#nationality-label {
+    margin-bottom: -12px;
+    margin-right: 514px;
+}
+
+#note-label {
+    margin-bottom: -12px;
+    margin-right: 555px;
+}
+
+.form-group div.frame > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.form-group div.frame label {
+    margin-bottom: 0;
+    padding: 4px;
+}
+
+.container input[type="submit"] {
+    float: right;
+    background-color: #8a020b;
+    color: #fff;
+    padding: 15px 35px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #630108;
+}
+
+/* Cursor style change on hover for input text, radio, checkbox, and label */
+.form-group input[type="text"]:hover,
+.form-group input[type="radio"]:hover,
+.form-group input[type="checkbox"]:hover,
+.form-group label:hover {
+    cursor: pointer; /* Kiểu con trỏ khi hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        width: 80%;
+    }
+}
+
+/* // content */
+
+/* description */
+#description {
+    margin-bottom: 0;
+}
+
+#description hr{
+    margin-left: 220px;
+    margin-right: 220px;
+}
+
+#Licensing {
+    color: #8B8B8B;
+    text-align: left;
+    padding: 10px;
+    margin-left: 230px;
+}
+
+#des {
+    color: #800009;
+    float: left;
+    display: inline-block;
+    margin-left: 230px;
+}
+
+#edited-time {
+    float: right;
+    font-weight: 550;
+    display: inline-block;
+    margin-right: 230px;
+}
+/* //description */
+
+
+#home {
+    margin-right: 1050px;
+}
+
+#home:hover {
+    cursor: pointer;
+}
+
+.header {
+    background: linear-gradient(180deg,
+            rgba(217, 217, 217, 0.60) 0%,
+            rgba(217, 217, 217, 0.00) 39.58%,
+            rgba(217, 217, 217, 0.51) 100%);
+    padding: 30px;
+    border: 1px solid black;
+    width: 100%;
+	height: 125px;
+}
+
+.header h1 {
+    color: black;
+    text-align: left;
+    font-size: 34px;
+    position: relative;
+    bottom: -15px;
+    left: 10px;
+}
+
+.header h2 {
+    color: #800009;
+    text-align: left;
+    font-size: 20px;
+    position: relative;
+    bottom: -15px;
+    left: 10px;
+}
+
+#Navigation-board {
+    float: right;
+    margin-right: 20px;
+}
+
+#Navigation-board ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	margin-top: -19px;
+}
+
+#Navigation-board li {
+    display: inline-block;
+	margin-right: 5px;
+}
+
+#Navigation-board li:last-child {
+	margin-right: 5px;
+}
+
+#Navigation-board li a {
+    display: block;
+    color: #000000;
+    text-align: center; 
+	margin-top: 7px;
+	margin-left: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+	font-weight: 550;
+	font-size: 20px;
+}
+
+#Navigation-board li a:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+#SCP-Logo {
+    float: left;
+    width: 100px;
+    height: 95px;
+    margin-left: -15px;
+    margin-top: -15px;
+}
+
+.header #Search-Logo {
+    float: right;
+    width: 40px;
+    height: 45px;
+    margin-right: -95px;
+    margin-top: -10px;
+}
+
+.header #User-Logo {
+    float: right;
+    width: 40px;
+    height: 45px;
+    margin-right: 40px;
+    margin-top: -10px;
+}
+
+nav {
+    width: 30%;
+    background: #ccc;
+    padding: 20px;
+}
+
+article {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.footer {
+    background: linear-gradient(180deg, #D9D9D9 30.73%, #DCDCDC 56.68%);
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+	text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; /* Thêm dòng này */
+}
+
+.footer-header {
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.header-footer {
+    text-align: left;
+}
+
+.footer th {
+    font-size: 30px;
+}
+
+.footer ul li {
+    list-style-type: none;
+    font-size: 22px;
+    line-height: 2;
+}
+
+.footer table {
+    padding-top: 30px;
+    padding-left: 100px;
+    position: absolute;
+}
+
+#contact-us {
+    padding-left: 20px;
+    position: relative;
+}
+
+#other {
+    padding-left: 40px;
+    /* position: absolute; */
+}
+
+.copyright-section {
+    width: 100%;
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+}
+
+.copyright-section p {
+    font-size: 15px;
+    font-weight: 550;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.footer a {
+    color: #800009;
+    text-decoration: none;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+}
+
+footer img {
+    padding-top: 20px;
+    position: relative;
+}
+
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
+
+    nav,
+    article {
+        width: 100%;
+    }
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Scp Foundation</title>
+    <link rel="stylesheet" href="..\css\Sign-up.css">
+    <link rel="icon" type="image/x-icon" href="..\image\Web images\SCP_logo_white.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!-- Banner -->
+    <div class="header">
+		<div id="home" onclick="loadHomePage()">
+        	<img id="SCP-Logo" src="..\image\Web images\SCP_logo.png" alt="SCP_logo">
+        	<h1>SCP Foundation</h1>
+        	<h2>Secure, Contain, Protect</h2>
+		</div>
+		<div>
+        	<img id="User-Logo" src="..\image\Web images\User.png" alt="User_logo">
+        	<img id="Search-Logo" src="..\image\Web images\Search.png" alt="Search_logo">
+		</div>
+        <div id="Navigation-board">
+			<ul>
+				<li><a href="Album.html">Album</a></li>
+            	<li><a href="Shopping.html">Shopping</a></li>
+				<li><a href="Sign-up.html">Sign up</a></li>
+        	</ul>
+		</div>
+    </div>
+
+    <!-- Content -->
+<div class="container">
+        <h2>SIGN UP</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label id="student-id-label" class="label-style">Student id: </label>
+                <input type="text" id="student-id" name="Student-id" required>
+            </div>
+            <div class="form-group">
+                <label id="name-label" class="label-style">Full name: </label>
+                <input type="text" id="name" name="Name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" class="label-style">Email: </label>
+                <input type="email" id="email" name="Email" required>
+            </div>
+            <div class="form-group">
+                <label id="sex-label" class="label-style">Gender: </label>
+                <div class="frame"> 
+                    <div>
+                        <input type="radio" id="male" name="sex" value="Male" required>
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="sex" value="Female" required>
+                        <label for="female">Female</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="other-gender" name="sex" value="Other" required>
+                        <label for="other-gender">Other</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label id="hobby-label" class="label-style">Hobby: </label>
+                <div class="frame">
+                    <div>
+                        <input type="checkbox" id="reading" name="hobby" value="Reading">
+                        <label for="reading">Reading</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="traveling" name="hobby" value="Traveling">
+                        <label for="traveling">Traveling</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="music" name="hobby" value="Music">
+                        <label for="music">Music</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="cuisine" name="hobby" value="Cuisine">
+                        <label for="cuisine">Cuisine</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="other-hobby" name="hobby" value="Other" required>
+                        <label for="other-hobby">Other</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label id="nationality-label" class="label-style">Nationality: </label>
+                <div>
+                    <select id="nationality" name="nationality" required>
+                        <option value=""></option>
+                        <option value="Vietnamese">Việt Nam</option>
+                        <option value="Japan">Japan</option>
+                        <option value="France">France</option>
+                        <option value="Other">Other countries</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label id="note-label" class="label-style">Note: </label>
+                <textarea id="note" name="note" maxlength="200"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Confirm">
+            </div>
+        </form>
+    </div>
+    <div id="description">
+        <hr>
+        <h2 id="Licensing">Licensing / Citation</h2>
+        <p id="des">001-proposal doctor-mann factory featured tale</p>
+        <p id="edited-time">page revision: 50, last edited:11 Jul 2021, 20:50 (5 days ago)</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div>
+            <table>
+                <tr>
+                    <th class="header-footer" id="contact-us">Contact us</th>
+                    <th class="header-footer" id="other">Other</th>
+                </tr>
+                <tr>
+                    <td><img src="..\image\Web images\logo_contact.png" alt="logo-contact"></td>
+                    <td>
+                        <ul>
+                            <li><a href="#">Robotics CLUB @</a> UCLA Wiki</li>
+                            <li><a href="#">UTAU Wiki 1.0</a> wiki for UTAU voice synthesis software</li>
+                            <li><a href="#">The gamer Dome</a> Community Game Design Projects</li>
+                            <li><a href="#">SCP Foundation</a> The SCP Foundation Sandbox</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="copyright-section">
+            <hr>
+            <p>Copyright &copy; 2023 by Scp Wikidot. All Right Reserved.</p>
+        </div>
+    </div>
+    <script src="../javascript/Sign-up.js"></script>
+</body>
+
+</html>

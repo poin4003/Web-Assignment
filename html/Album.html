@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Scp Foundation</title>
+    <link rel="stylesheet" href="..\css\Album.css">
+    <link rel="icon" type="image/x-icon" href="..\image\Web images\SCP_logo_white.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!-- Banner -->
+    <div class="header">
+		<div id="home" onclick="loadHomePage()">
+        	<img id="SCP-Logo" src="..\image\Web images\SCP_logo.png" alt="SCP_logo">
+        	<h1>SCP Foundation</h1>
+        	<h2>Secure, Contain, Protect</h2>
+		</div>
+		<div>
+        	<img id="User-Logo" src="..\image\Web images\User.png" alt="User_logo">
+        	<img id="Search-Logo" src="..\image\Web images\Search.png" alt="Search_logo">
+		</div>
+        <div id="Navigation-board">
+			<ul>
+				<li><a href="Album.html">Album</a></li>
+            	<li><a href="Shopping.html">Shopping</a></li>
+				<li><a href="Sign-up.html">Sign up</a></li>
+        	</ul>
+		</div>
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+        <div>
+            <h2 id="DatabankOfCreatures">DATABANK OF CREATURE</h2>
+            <img src="../image/Fish images/1.jpg" alt="Creature image" id="albumImage" width="700" height="350">
+            <p id="imageName">1/20</p>
+        </div>
+        <div class="button">
+            <form>
+                <input type="button" value="First" onclick="changeImage('first')">
+                <input type="button" value="Prev" onclick="changeImage('prev')">
+                <input type="button" value="Next" onclick="changeImage('next')">
+                <input type="button" value="Final" onclick="changeImage('final')">
+                <div id="AutoLoadImage">
+                    <input type="checkbox" id="autoLoadCheckbox" onchange="toggleAutoLoad()">
+                    <label for="autoLoadCheckbox">Auto Load images</label>
+                </div>
+            </form>
+        </div>
+    </div>        
+    <div id="description">
+        <hr>
+        <h2 id="Licensing">Licensing / Citation</h2>
+        <p id="des">001-proposal doctor-mann factory featured tale</p>
+        <p id="edited-time">page revision: 50, last edited:11 Jul 2021, 20:50 (5 days ago)</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div>
+            <table>
+                <tr>
+                    <th class="header-footer" id="contact-us">Contact us</th>
+                    <th class="header-footer" id="other">Other</th>
+                </tr>
+                <tr>
+                    <td><img src="..\image\Web images\logo_contact.png" alt="logo-contact"></td>
+                    <td>
+                        <ul>
+                            <li><a href="#">Robotics CLUB @</a> UCLA Wiki</li>
+                            <li><a href="#">UTAU Wiki 1.0</a> wiki for UTAU voice synthesis software</li>
+                            <li><a href="#">The gamer Dome</a> Community Game Design Projects</li>
+                            <li><a href="#">SCP Foundation</a> The SCP Foundation Sandbox</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="copyright-section">
+            <hr>
+            <p>Copyright &copy; 2023 by Scp Wikidot. All Right Reserved.</p>
+        </div>
+    </div>
+    <script src="../javascript/Album.js"></script>
+</body>
+
+</html>
